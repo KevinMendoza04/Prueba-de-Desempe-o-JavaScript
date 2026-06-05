@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@test.com",
+      "password": "A123456",
+      "role": "admin",
+      "name": "Administrador"
+    },
+    {
+      "id": "2",
+      "email": "user@test.com",
+      "password": "A123456",
+      "role": "user",
+      "name": "Usuario"
+    },
+    {
+      "id": "3",
+      "email": "user2@test.com",
+      "password": "A123456",
+      "role": "user",
+      "name": "Usuario 2"
+    }
+  ],
+  "workspaces": [
+    {
+      "id": "1",
+      "name": "Sala A",
+      "type": "Sala de reuniones",
+      "capacity": 10,
+      "location": "Piso 1",
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "name": "Sala B",
+      "type": "Sala de reuniones",
+      "capacity": 8,
+      "location": "Piso 1",
+      "status": "available"
+    },
+    {
+      "id": "3",
+      "name": "Oficina 1",
+      "type": "Oficina privada",
+      "capacity": 4,
+      "location": "Piso 2",
+      "status": "available"
+    },
+    {
+      "id": "4",
+      "name": "Coworking A",
+      "type": "Espacio de coworking",
+      "capacity": 20,
+      "location": "Piso 3",
+      "status": "available"
+    },
+    {
+      "id": "5",
+      "name": "Auditorio Principal",
+      "type": "Auditorio",
+      "capacity": 100,
+      "location": "Piso 0",
+      "status": "available"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "1",
+      "userId": 2,
+      "workspaceId": 1,
+      "workspace": "Sala A",
+      "date": "2026-01-15",
+      "startHour": "08:00",
+      "endHour": "09:00",
+      "reason": "Sprint Planning",
+      "status": "rejected"
+    },
+    {
+      "id": "2",
+      "userId": 3,
+      "workspaceId": 1,
+      "workspace": "Sala B",
+      "date": "2026-01-15",
+      "startHour": "10:00",
+      "endHour": "11:00",
+      "reason": "Daily Meeting",
+      "status": "pending"
+    },
+    {
+      "userId": "1",
+      "workspaceId": 4,
+      "workspace": "Desconocido",
+      "date": "2026-06-27",
+      "startHour": "11:19",
+      "endHour": "20:27",
+      "reason": "porque si",
+      "status": "pending",
+      "id": "jR4Lyc2XBCw"
+    },
+    {
+      "userId": "2",
+      "workspaceId": 1,
+      "workspace": "Desconocido",
+      "date": "2026-06-14",
+      "startHour": "09:17",
+      "endHour": "20:17",
+      "reason": "yes",
+      "status": "pending",
+      "id": "Nexwzt3sccw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
